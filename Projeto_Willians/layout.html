@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos designer</title>
+
+    <style>
+        .imagem_maior {
+            width: 750px;
+            height: 500px;
+            border: 5px solid rgb(130, 17, 17);
+        }
+
+        body {
+
+            background-color: rgb(193, 192, 242);
+
+        }
+
+        .flex-conteiner {
+
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 50px;
+            max-width: 950px;
+
+        }
+
+        .col {
+            margin-left: 40px;
+
+        }
+
+        .margem-titulo {
+
+            margin-left: 270px;
+            color: rgb(5,0,151);
+        }
+
+
+
+        .imagem_menor {
+
+            width: 260px;
+            height: 200px;
+            margin-right: 08px;
+            border: 3px solid black;
+
+        }
+
+        header {
+
+            margin-left: 270px;
+            color: rgb(5,0,151);
+        }
+
+
+        .conteiner:hover img {
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .rodape {
+            text-align: center;
+        }
+
+        @keyframes neon {
+
+            from {
+
+                filter: drop-shadow( 0 0 0 var(--cor-neon));
+            }
+            to{
+                filter: drop-shadow(0 0 30px var(--cor-neon));
+            }
+        }
+        img{
+
+            animation: neon 5s alternate infinite ease-in-out;
+        }
+
+        .caixa{
+            --cor-neon:#f82720;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Desenhos digitais e físicos</h1>
+    </header>
+
+    <section class="flex-conteiner">
+
+        <div>
+
+            <img class="imagem_maior caixa" src="img/desenho digital.png" alt="imagem de uma arte">
+
+        </div>
+
+        <div class="col">
+            <h2>Desenhos Marcos e designer</h2>
+
+            <p>Nessa loja você encontra as melhores artes para a sua
+                preferência (digitais ou físicas).
+                Fora o trabalho como designer</p>
+
+            <h2>Vantagens e benefícios</h2>
+            <ul>
+                <li>Criatividade</li>
+                <li>Elegância</li>
+                <li>Estilo</li>
+                <li>Bom preço</li>
+            </ul>
+        </div>
+    </section>
+
+    <h2 class="margem-titulo">Imagens de alguns projetos</h2>
+
+    <section class="flex-conteiner">
+
+        <div class="conteiner">
+            <img class="imagem_menor" src="img/agua viva.png" alt="imagem agua viva">
+        </div>
+        <div class="conteiner">
+            <img class="imagem_menor" src="img/caixa.png" alt="imagem caixa">
+        </div>
+        <div class="conteiner">
+            <img class="imagem_menor" src="img/artes exclusivas1.png" alt="imagem bolo">
+
+        </div>
+        <div class="conteiner">
+            <img class="imagem_menor" src="img/barco.jpeg" alt="imagem barco">
+        </div>
+
+
+    </section>
+
+</body>
+
+<footer>
+    <div class="rodape">
+        <h3>Trabalho feito por Marcos e José Carlos</h3>
+    </div>
+</footer>
+
+</html>
